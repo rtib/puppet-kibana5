@@ -39,7 +39,7 @@ describe 'kibana5' do
     it do
       is_expected.to contain_class('kibana5::install')
       is_expected.to contain_package('kibana').with(
-        'ensure' => '5.1.1'
+        'ensure' => 'latest'
       )
     end
   end
