@@ -1,0 +1,23 @@
+{
+  "name": "trepasi-kibana5",
+  "version": "0.1.0",
+  "author": "T. Repasi",
+  "summary": "Install and configure an Kibana 5.x instance",
+  "tags": ["Kibana"],
+  "license": "Apache-2.0",
+  "source": "t",
+  "project_page": "",
+  "issues_url": "",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.0.0 < 5.0.0"},
+    {"name":"puppetlabs-apt","version_requirement":">= 2.0.0 < 3.0.0"},
+    {"name":"reidmv-yamlfile","version_requirement":">= 0.2.0 < 1.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem":"Debian",
+      "operatingsystemrelease":[ "8.0" ]
+    }
+  ],
+  "data_provider": "hiera"
+}

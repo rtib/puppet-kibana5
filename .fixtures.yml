@@ -1,0 +1,11 @@
+---
+fixtures:
+  symlinks:
+    kibana5: "#{source_dir}"
+  forge_modules:
+    stdlib:
+      repo: 'puppetlabs/stdlib'
+    apt:
+      repo: 'puppetlabs/apt'
+    yamlfile:
+      repo: 'reidmv/yamlfile'

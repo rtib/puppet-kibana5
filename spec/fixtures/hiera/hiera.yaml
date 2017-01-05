@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - '%{::clientcert}'
+  - '%{::role}'
+  - default
+:yaml:
+  :datadir: './spec/fixtures/hiera'

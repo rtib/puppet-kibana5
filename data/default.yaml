@@ -1,0 +1,13 @@
+---
+kibana5::ensure: present
+kibana5::manage_repo: true
+kibana5::repository:
+  location: 'deb https://artifacts.elastic.co/packages/5.x/apt'
+  release: stable
+  repos: main
+  key:
+    id: 46095ACC8548582C1A2699A9D27D666CD88E42B4
+    source: 'https://artifacts.elastic.co/GPG-KEY-elasticsearch'
+kibana5::package_name: kibana
+kibana5::package_version: latest
+kibana5::service_name: kibana
