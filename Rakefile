@@ -8,6 +8,10 @@ if RUBY_VERSION >= '1.9'
   RuboCop::RakeTask.new
 end
 
+Blacksmith::RakeTask.new do |t|
+  t.tag_pattern = "%s"
+end
+
 Rake::Task[:lint].clear
 PuppetLint.configuration.send('disable_variable_is_lowercase')
 PuppetLint::RakeTask.new :lint do |config|
