@@ -2,6 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/rtib/puppet-kibana5/master/LICENSE)
 [![Build Status](https://travis-ci.org/rtib/puppet-kibana5.svg?branch=master)](https://travis-ci.org/rtib/puppet-kibana5)
+[![Coverage Status](https://coveralls.io/repos/github/rtib/puppet-kibana5/badge.svg?branch=master)](https://coveralls.io/github/rtib/puppet-kibana5?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/rtib/puppet-kibana5.svg)](https://github.com/rtib/puppet-kibana5/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/rtib/puppet-kibana5.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
