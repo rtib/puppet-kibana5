@@ -9,7 +9,7 @@ if RUBY_VERSION >= '1.9'
 end
 
 Blacksmith::RakeTask.new do |t|
-  t.tag_pattern = "%s"
+  t.tag_pattern = '%s'
 end
 
 Rake::Task[:lint].clear
