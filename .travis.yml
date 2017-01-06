@@ -14,5 +14,7 @@ gemfile:
   - .gemfile
 env:
   - PUPPET_VERSION="~> 4.8" STRICT_VARIABLES="yes"
+  - PUPPET_VERSION="~> 4.7" STRICT_VARIABLES="yes"
+  - PUPPET_VERSION="~> 4.6" STRICT_VARIABLES="yes"
 notifications:
   email: false

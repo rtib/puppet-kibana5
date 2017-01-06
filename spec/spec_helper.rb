@@ -3,7 +3,7 @@ require 'coveralls'
 
 RSpec.configure do |config|
   config.after(:suite) do
-    RSpec::Puppet::Coverage.report!
     Coveralls.wear!
+    RSpec::Puppet::Coverage.report!
   end
 end
