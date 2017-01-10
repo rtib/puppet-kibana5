@@ -19,10 +19,3 @@ env:
   - PUPPET_VERSION="~> 4.6" STRICT_VARIABLES="yes"
 notifications:
   email: false
-deploy:
-  provider: puppetforge
-  user: trepasi
-  password: 
-    secure: "a4s43j3AUdCTq9uvtII6iAaTFnFJuNyUSDCDa1d+OBebmTzqS7JxZ0fUnINqklgfcVpnBFBuTKNsy6bNzrhCHk+Inra8IJiVblUG7YL7vzhFFz0Gj/taU0qhPCda/+rTNWrtMPF1pT9gUnMF1osQ+kEBvj+v86Nt7aNDkD+Tf2xhmwvRzjEO0UVXQKULZmxj1eRZCBJEVq9gGgS00s0VOm2Hu6izbPmDu+68Gmt8WTG3Cmi2hOysOWiTU2qPvU0xI1h53wYbWQtF7bs1blgO7A/fhmr1TrGx78ekt5bw+xZnLBgCfKpBA5+X77e7UlZeK1cgV+MfuZpJkcoK8GwvsplpyMwk2VYLVvHYh7M/dUltdeljXafwQclXJE0KQ6YDgK0AReFa4PBGLbt5KZKCcxd97spoW/mQQRGRXerZHJQW22yfnX7oh6XBQu6q13+S7YNKQqG/Mcp/TfVDV2wpJGbzcYLdzHxd0Hp1ZWd7p4GaPKSaw4/EO7k+tIpFn2aiRm9Yy9PbUDuhJpP8O2P+q14UpotqaKd+TH/+RXL2rRFG+w2xYgHmNBa/nUZWldhSeqBve+2k8fS0qYP3mOgtu6SaLBCtXnOmUR9U7nNZOsuz0q6dG/sq7/kQrydSs9nkOMCLmFgWPBOKRbQEyJ97qzi++DZ+93Bq2dR2fWDVEus="
-  on:
-    branch: master
