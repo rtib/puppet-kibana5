@@ -3,4 +3,6 @@ require 'rspec-puppet-facts'
 require 'coveralls'
 include RspecPuppetFacts
 
-Coveralls.wear!
+Coveralls.wear! do
+  add_filter '/spec/fixtures/modules/kibana5/'
+end
