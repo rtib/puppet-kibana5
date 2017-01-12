@@ -1,9 +1,8 @@
 sudo: false
 language: ruby
-bundler_args: --without system_tests
+bundler_args: "--without system_tests"
 script: bundle exec rake release_checks
 matrix:
-  allow_failures: 
   fast_finish: true
 rvm:
 - 2.1.10
@@ -11,7 +10,7 @@ rvm:
 - 2.3.3
 - 2.4.0
 gemfile:
-- .gemfile
+- ".gemfile"
 env:
   matrix:
   - PUPPET_VERSION="~> 4.8" STRICT_VARIABLES="yes"
@@ -19,3 +18,9 @@ env:
   - PUPPET_VERSION="~> 4.6" STRICT_VARIABLES="yes"
 notifications:
   email: false
+before_script:
+  - |
+     export PATH=$HOME/.cargo/bin:$PATH:$PATH &&
+     cargo install --git https://github.com/badboy/travis-after-all-rs
+after_success:
+  - travis-after-all && [[ $TRAVIS_EVENT_TYPE$TRAVIS_BRANCH == 'pushmaster' ]] && echo "All fine, let's publish"

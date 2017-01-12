@@ -5,6 +5,7 @@ class kibana5::config {
       target => '/etc/kibana/kibana.yml',
       key    => $key,
       value  => $kibana5::config[$key],
+      notify => Service[$kibana5::service_name]
     }
   }
 }
