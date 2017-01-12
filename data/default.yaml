@@ -2,7 +2,7 @@
 kibana5::ensure: present
 kibana5::manage_repo: true
 kibana5::repository:
-  location: 'deb https://artifacts.elastic.co/packages/5.x/apt'
+  location: 'https://artifacts.elastic.co/packages/5.x/apt'
   release: stable
   repos: main
   key:
