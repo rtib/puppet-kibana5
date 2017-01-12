@@ -18,9 +18,3 @@ env:
   - PUPPET_VERSION="~> 4.6" STRICT_VARIABLES="yes"
 notifications:
   email: false
-before_script:
-  - |
-     export PATH=$HOME/.cargo/bin:$PATH:$PATH &&
-     cargo install --git https://github.com/badboy/travis-after-all-rs
-after_success:
-  - travis-after-all && [[ $TRAVIS_EVENT_TYPE$TRAVIS_BRANCH == 'pushmaster' ]] && echo "All fine, let's publish"
