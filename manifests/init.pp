@@ -59,9 +59,9 @@ class kibana5 (
   String $service_name,
   Hash $config = {},
 ) {
-  notify{ 'Deprication warning! This module is depricated and not maintained any more. Check alternatives.'}
-  class { '::kibana5::repo': } ->
-  class { '::kibana5::install': } ->
-  class { '::kibana5::config': } ->
-  class { '::kibana5::service': }
+  notify{ 'Deprication warning! This module is depricated and not maintained any more. Check alternatives.': }
+  class { '::kibana5::repo': }
+  -> class { '::kibana5::install': }
+  -> class { '::kibana5::config': }
+  ~> class { '::kibana5::service': }
 }
