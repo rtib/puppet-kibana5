@@ -5,6 +5,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/rtib/puppet-kibana5.svg)](https://github.com/rtib/puppet-kibana5/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/rtib/puppet-kibana5.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
+## Deprication warning
+This module is depricated and won't be maintained any more. Check for alternatives, e.g. [elastic-kibana](https://forge.puppet.com/elastic/kibana).
+
 #### Table of Contents
 
 1. [Description](#description)
